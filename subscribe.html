@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscribe - GharKaKhana</title>
+  <link rel="stylesheet" href="css/subscribe.css">
+  <script src="js/subscribe.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🍳 GharKaKhana</div>
+</header>
+
+<section class="form-section">
+  <h1>Subscribe to GharKaKhana</h1>
+  <p>Fill your details to start your meal plan</p>
+
+  <form class="form-box" onsubmit="handleSubmit(event)">
+
+    <div class="input-group">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name" required>
+    </div>
+
+    <div class="input-group">
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter phone number" required>
+    </div>
+
+    <div class="input-group">
+      <label>Address</label>
+      <textarea placeholder="Enter full address" required></textarea>
+    </div>
+
+    <div class="input-group">
+      <label>Select Plan</label>
+      <select>
+        <option>Basic Plan</option>
+        <option>Standard Plan</option>
+        <option>Premium Plan</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Select Meal Type</label>
+      <select>
+        <option>Veg</option>
+        <option>Non-Veg</option>
+        <option>Diet</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn-primary">Confirm Subscription</button>
+    <p id="successMsg" style="display:none; color:green;">
+     ✅ Subscription Successful!</p>
+
+  </form>
+</section>
+
+</body>
+</html>
